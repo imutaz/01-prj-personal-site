@@ -1,0 +1,372 @@
+/* Basic reset - removes default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic page styling */
+body {
+  font-family: 'Inter', Arial, sans-serif; /* Nice, easy-to-read font */
+  line-height: 1.6; /* Makes text easier to read */
+  color: #333; /* Dark gray text */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Navigation bar that stays at the top */
+.navbar {
+  position: fixed; /* Stays at top when scrolling */
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 15px 0; /* Space inside the navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Small shadow */
+  z-index: 1000; /* Makes sure it stays on top */
+}
+
+/* Container for navigation content */
+.nav-container {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Centers the navigation */
+  padding: 0 20px; /* Space on sides */
+  display: flex; /* Simple layout using flexbox */
+  justify-content: space-between; /* Spreads items apart */
+  align-items: center; /* Centers items vertically */
+}
+
+/* Your name/logo styling */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Icon spacing in logo */
+.logo i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #666; /* Lighter gray for icons */
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Shows links in a row */
+}
+
+/* Individual navigation items */
+.nav-links li {
+  margin-left: 30px; /* Space between links */
+}
+
+/* Navigation link styling */
+.nav-links a {
+  text-decoration: none; /* Removes underline */
+  color: #666; /* Gray color */
+  font-weight: 500; /* Medium thickness */
+}
+
+/* Icon spacing in navigation links */
+.nav-links a i {
+  margin-right: 5px; /* Small space between icon and text */
+}
+
+/* Change color when hovering over navigation links */
+.nav-links a:hover {
+  color: #333; /* Darker color when hovering */
+}
+
+/* Hero section - first thing visitors see */
+.hero-section {
+  min-height: 100vh; /* Takes full screen height */
+  display: flex; /* Simple layout using flexbox */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  background-color: white;
+  text-align: center;
+  padding-top: 80px; /* Space for navigation bar */
+}
+
+/* Content inside hero section */
+.hero-content {
+  max-width: 800px; /* Maximum width */
+  padding: 0 20px; /* Space on sides */
+}
+
+/* Profile photo container */
+.profile-photo {
+  margin-bottom: 30px; /* Space below photo */
+}
+
+/* Profile photo styling */
+.profile-photo img {
+  width: 200px; /* Photo width */
+  height: 200px; /* Photo height */
+  border-radius: 50%; /* Makes photo circular */
+  border: 4px solid #333; /* Dark border around photo */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Shadow effect */
+  object-fit: cover; /* Makes sure photo fits nicely */
+}
+
+/* Main heading (your name) */
+h1 {
+  font-size: 3rem; /* Large text size */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below heading */
+  color: #333;
+}
+
+/* Subtitle under your name */
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 15px; /* Space below subtitle */
+}
+
+/* Icon spacing in subtitle */
+.hero-subtitle i {
+  margin-right: 8px;
+  color: #333;
+}
+
+/* Contact info styling */
+.contact-info {
+  font-size: 1.1rem;
+  color: #888; /* Light gray */
+}
+
+/* Icon spacing in contact info */
+.contact-info i {
+  margin-right: 5px;
+  color: #666;
+}
+
+/* Container for main content sections */
+.main-container {
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Centers the content */
+  padding: 0 20px; /* Space on sides */
+}
+
+/* Individual content sections */
+section {
+  margin-bottom: 60px; /* Space between sections */
+  padding: 40px 0; /* Space inside sections */
+}
+
+/* Section heading styling */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px; /* Space below heading */
+  color: #333;
+  border-bottom: 2px solid #333; /* Line under heading */
+  padding-bottom: 10px; /* Space above line */
+}
+
+/* Icon spacing in section headings */
+h2 i {
+  margin-right: 10px;
+  color: #666;
+}
+
+/* Subsection heading styling */
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 30px 0 20px 0; /* Space above and below */
+  color: #333;
+}
+
+/* Icon spacing in subsection headings */
+h3 i {
+  margin-right: 8px;
+  color: #666;
+}
+
+/* Timeline item (job/project entry) styling */
+.timeline-item {
+  margin-bottom: 40px; /* Space between items */
+  background-color: white;
+  padding: 25px; /* Space inside item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Date display styling */
+.timeline-date {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 8px; /* Space below date */
+  font-size: 0.95rem; /* Slightly smaller text */
+}
+
+/* Icon spacing in dates */
+.timeline-date i {
+  margin-right: 5px;
+}
+
+/* Job title styling */
+.job-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px; /* Space below title */
+  color: #333;
+}
+
+/* Icon spacing in job titles */
+.job-title i {
+  margin-right: 8px;
+  color: #666;
+}
+
+/* Organization/company name styling */
+.organization {
+  color: #666;
+  font-style: italic; /* Slanted text */
+  margin-bottom: 15px; /* Space below organization */
+}
+
+/* Icon spacing in organization names */
+.organization i {
+  margin-right: 5px;
+}
+
+/* Content inside timeline items */
+.timeline-content {
+  margin-top: 15px; /* Space above content */
+}
+
+/* List styling */
+ul {
+  margin-left: 20px; /* Indent lists */
+}
+
+/* List item styling */
+li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+/* Icon styling in list items */
+li i {
+  margin-right: 8px;
+  color: #666;
+  width: 16px; /* Fixed width so icons align nicely */
+}
+
+/* Skills list container */
+.skills-list {
+  display: flex; /* Simple layout using flexbox */
+  flex-wrap: wrap; /* Allows items to wrap to next line */
+  gap: 10px; /* Space between skill items */
+  margin-bottom: 30px; /* Space below skills list */
+}
+
+/* Individual skill item styling */
+.skill-item {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 8px 16px; /* Space inside skill item */
+  border-radius: 20px; /* Rounded pill shape */
+  font-size: 0.9rem; /* Slightly smaller text */
+  font-weight: 500; /* Medium thickness */
+}
+
+/* Icon spacing in skill items */
+.skill-item i {
+  margin-right: 6px;
+}
+
+/* Contact section styling */
+.contact-section {
+  background-color: white;
+  padding: 40px; /* Space inside section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+/* Contact section paragraph */
+.contact-section p {
+  margin-bottom: 25px; /* Space below paragraph */
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Contact links container */
+.contact-links {
+  display: flex; /* Simple layout using flexbox */
+  justify-content: center; /* Centers the buttons */
+  gap: 20px; /* Space between buttons */
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+}
+
+/* Contact link button styling */
+.contact-links a {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Space inside button */
+  text-decoration: none; /* Removes underline */
+  border-radius: 6px; /* Rounded corners */
+  font-weight: 500; /* Medium thickness */
+}
+
+/* Icon spacing in contact links */
+.contact-links a i {
+  margin-right: 8px;
+}
+
+/* Change color when hovering over contact buttons */
+.contact-links a:hover {
+  background-color: #555; /* Lighter color when hovering */
+}
+
+/* Mobile phone adjustments */
+@media (max-width: 768px) {
+  /* Stack navigation vertically on small screens */
+  .nav-container {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    margin-top: 15px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  /* Smaller profile photo on mobile */
+  .profile-photo img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Smaller text on mobile */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Less padding on mobile */
+  .timeline-item {
+    padding: 20px;
+  }
+  
+  /* Stack contact buttons vertically on mobile */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
